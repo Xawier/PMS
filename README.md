@@ -1,6 +1,8 @@
 PMS
 ===
 
+Robimy własnego Redmine'a! :o
+
 Uwaga 1
 =======
 
@@ -10,3 +12,8 @@ Uwaga 2
 =======
 
 Przydało by się, aby ktoś przerobił te pliki html na php z szablonem, do ktorego bedziemy includowac kolejne podstrony, bo zajedziemy sie przy kazdej zmianie w headerz/footerze/menu...
+
+Dokumentacja
+============
+
+Proponuje pisać dokumentacje i API o ktore zostalismy poproszenie w wiki!
