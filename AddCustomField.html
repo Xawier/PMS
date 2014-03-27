@@ -1,0 +1,153 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Dodaj nowe pole / PMS Layout Sketch</title>
+	<meta name="description" content="Html PMS sketch">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Nawigacja</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand brand" href="index.html">PMS</a>
+				<p class="navbar-text actual-project-cont">
+					<span class="navbar-brand-separator">/</span> 
+					<a href="ProjectOverview.html" class="navbar-actual-project">Projekt Testowy</a>
+				</p>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projekty <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-header">Aktualny projekt</li>
+							<li><a href="#">Projekt testowy</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Ostatnie projekty</li>
+							<li><a href="#">Most recent one</a></li>
+							<li><a href="#">Another recent project</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Pokaż wszystkie projekty</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Zadania <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-header">Aktualny projekt</li>
+							<li><a href="ListOfTasks.html">Lista zadań</a></li>
+							<li><a href="AddTask.html">Dodaj zadanie</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Filtry</li>
+							<li><a href="#">Zadania przypisane do mnie</a></li>
+							<li><a href="#">Ostatnio dodane zadania</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Zarządzaj filtrami</a></li>
+							<li class="divider"></li>
+							<li><a href="CustomFields.html">Dodatkowe pola</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="navbar-form navbar-left">
+					<button type="button" class="btn btn-primary" id="add-task-btn">Dodaj zadanie</button>
+				</div>
+				<form class="navbar-form navbar-right" role="form">
+					<div class="form-group">
+						<input type="text" placeholder="Wpisz szukaną frazę..." class="form-control">
+					</div>
+					<button type="submit" class="btn btn-success">Szukaj</button>
+					<button type="button" class="btn btn-info">
+						<span class="glyphicon glyphicon-user"></span>
+					</button>
+				</form>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+	<div class="container">
+		<ol class="breadcrumb">
+			<li><a href="ListOfTasks.html">Zadania</a></li>
+			<li><a href="CustomFields.html">Dodatkowe pola</a></li>
+			<li class="active">Dodaj nowe pole</li>
+		</ol>
+	</div>
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+		<div class="container">
+			<div class="center-block">
+				<form class="form-horizontal" role="form">
+					<div class="form-group">
+						<label for="inputFieldName" class="col-sm-2 control-label">Nazwa</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="inputFieldName" placeholder="Nazwa dodatkowego pola" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputType" class="col-sm-2 control-label">Typ</label>
+						<div class="col-sm-10">
+							<select class="form-control" id="inputType">
+								<option>Tekst</option>
+								<option>Opis</option>
+								<option>Wybór</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="form-group form-inline">
+						<label for="inputLength" class="col-sm-2 control-label">Min - Max długość</label>
+						<div class="col-sm-10">
+							<input type="number" class="form-control" id="inputLengthMin" placeholder="" min="0" value="0" required>
+							<input type="number" class="form-control" id="inputLengthMax" placeholder="" min="0" value="0" required> (0 oznacza brak limitów)
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputVersion" class="col-sm-2 control-label">Wzorzec</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="inputVersion" placeholder="Np. ^[a-zA-Z]+$" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputBuildNumber" class="col-sm-2 control-label">Wartość domyślna</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="inputBuildNumber" placeholder="Np. true" required>
+						</div>
+					</div>
+					<br/>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit" class="btn btn-success">Dodaj pole</button>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<footer>
+			<p>&copy; PMS 2014</p>
+		</footer>
+	</div> <!-- /container -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

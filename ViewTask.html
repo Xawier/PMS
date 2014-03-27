@@ -1,0 +1,217 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Szczegóły zadania / PMS Layout Sketch</title>
+	<meta name="description" content="Html PMS sketch">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+</head>
+
+<body>
+	<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Nawigacja</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand brand" href="index.html">PMS</a>
+				<p class="navbar-text actual-project-cont">
+					<span class="navbar-brand-separator">/</span> 
+					<a href="ProjectOverview.html" class="navbar-actual-project">Projekt Testowy</a>
+				</p>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projekty <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-header">Aktualny projekt</li>
+							<li><a href="#">Projekt testowy</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Ostatnie projekty</li>
+							<li><a href="#">Most recent one</a></li>
+							<li><a href="#">Another recent project</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Pokaż wszystkie projekty</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Zadania <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-header">Aktualny projekt</li>
+							<li><a href="ListOfTasks.html">Lista zadań</a></li>
+							<li><a href="AddTask.html">Dodaj zadanie</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Filtry</li>
+							<li><a href="#">Zadania przypisane do mnie</a></li>
+							<li><a href="#">Ostatnio dodane zadania</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Zarządzaj filtrami</a></li>
+							<li class="divider"></li>
+							<li><a href="CustomFields.html">Dodatkowe pola</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="navbar-form navbar-left">
+					<button type="button" class="btn btn-primary" id="add-task-btn">Dodaj zadanie</button>
+				</div>
+				<form class="navbar-form navbar-right" role="form">
+					<div class="form-group">
+						<input type="text" placeholder="Wpisz szukaną frazę..." class="form-control">
+					</div>
+					<button type="submit" class="btn btn-success">Szukaj</button>
+					<button type="button" class="btn btn-info">
+						<span class="glyphicon glyphicon-user"></span>
+					</button>
+				</form>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+	<div class="container">
+		<ol class="breadcrumb">
+			<li><a href="ListOfTasks.html">Zadania</a></li>
+			<li><a href="ProjectOverview.html">Projekt testowy</a></li>
+			<li class="active">#BUG-1</li>
+		</ol>
+		
+	</div>
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+
+	<div class="jumbotron jumbotron-padding-top-10">
+
+		<div class="container">
+
+			<div class="center-block">
+				<nav class="navbar navbar-default navbar-margin-top" role="navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+								<span class="sr-only">Zarządzaj</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+
+							</button>
+							<span class="navbar-brand brand"><span class="label label-warning">Bug</span> Zadanie pierwsze, coś nie działa</span>
+						</div>
+						<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-2">
+							<a href="EditTask.html">
+								<button type="button" class="btn btn-default navbar-btn">Edycja</button>
+							</a> 
+							<button type="button" class="btn btn-default navbar-btn">Komentarz</button> 
+							<button type="button" class="btn btn-default navbar-btn">Przydziel osobę</button>
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+									Więcej <span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Dodaj załączniki</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Dodaj do obserwowanych</a></li>
+									<li><a href="#">Pokaż obserwujących</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Utwórz podzadanie</a></li>
+									<li><a href="#">Zmień w podzadanie</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Przenieś</a></li>
+									<li><a href="#">Skopiuj do innego projektu</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#home" data-toggle="tab">Szczegóły</a></li>
+				<li><a href="#profile" data-toggle="tab">Historia zmian</a></li>
+				<li><a href="#messages" data-toggle="tab">Komentarze</a></li>
+				<li><a href="#settings" data-toggle="tab">Obserwujący</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content tab-content-white">
+				<div class="tab-pane active" id="home">
+					<h3><span class="glyphicon glyphicon-info-sign"></span> Szczegóły</h3>
+					<div class="row show-grid row-with-space">
+						<div class="col-md-1 col-md-3 details-label">Priorytet:</div>
+						<div class="col-md-2 col-md-6">Wysoki</div>
+						<div class="col-md-1 col-md-3 details-label">Status:</div>
+						<div class="col-md-2 col-md-6">Analiza</div>
+					</div>
+					<div class="row show-grid row-with-space">
+						<div class="col-md-1 col-md-3 details-label">Typ:</div>
+						<div class="col-md-2 col-md-6">Bug</div>
+						<div class="col-md-1 col-md-3 details-label">Rozwiązanie:</div>
+						<div class="col-md-2 col-md-6">Nierozwiązany</div>
+					</div>
+					<div class="row show-grid row-with-space">
+						<div class="col-md-1 col-md-3 details-label">Wersje:</div>
+						<div class="col-md-2 col-md-6">2.0</div>
+						<div class="col-md-1 col-md-3 details-label">Etykiety:</div>
+						<div class="col-md-4 col-md-6"><kbd>Jakiś label</kbd><kbd>Inna etykieta</kbd></div>
+					</div>
+					<h3><span class="glyphicon glyphicon-font"></span> Dokładny opis</h3>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper eros id massa pretium varius. Phasellus iaculis placerat rutrum. Maecenas facilisis odio libero, non tincidunt turpis ultricies id. Nam scelerisque ligula vel est posuere, ultricies imperdiet elit eleifend. Etiam eu nibh sem. Vestibulum laoreet sollicitudin lorem, nec facilisis orci posuere sit amet. Aenean suscipit risus elementum eros vehicula consectetur. Sed eu venenatis nisl, et accumsan lorem. Etiam ac mollis sapien. Fusce scelerisque orci non felis volutpat porta. Suspendisse at nisi.
+					<h3><span class="glyphicon glyphicon-user"></span> Osoby</h3>
+					<div class="row show-grid row-with-space">
+						<div class="col-md-2 col-md-3 details-label">Przypisana osoba:</div>
+						<div class="col-md-2 col-md-6">Michał Kot</div>
+						<div class="col-md-2 col-md-3 details-label">Przypisana przez:</div>
+						<div class="col-md-2 col-md-6">Grzegorz Pała</div>
+						<div class="col-md-2 col-md-3 details-label">Recenzent:</div>
+						<div class="col-md-2 col-md-6">Grzegorz Pała</div>
+					</div>
+					<h3><span class="glyphicon glyphicon-calendar"></span> Daty</h3>
+					<div class="row show-grid row-with-space">
+						<div class="col-md-2 col-md-3 details-label">Data utworzenia:</div>
+						<div class="col-md-2 col-md-6">13.03.2014</div>
+						<div class="col-md-2 col-md-3 details-label">Uaktualniono:</div>
+						<div class="col-md-2 col-md-6">31.03.2014</div>
+					</div>
+					<h3><span class="glyphicon glyphicon-paperclip"></span> Załączniki</h3>
+					Brak załączników.
+				</div>
+				<div class="tab-pane" id="profile">...</div>
+				<div class="tab-pane" id="messages">...</div>
+				<div class="tab-pane" id="settings">...</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="container">
+		<footer>
+			<p>&copy; PMS 2014</p>
+		</footer>
+	</div> <!-- /container -->
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript">
+		$("#add-task-btn").click(function(event) {
+			window.location = "AddTask.html";
+		});
+
+		
+	</script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
