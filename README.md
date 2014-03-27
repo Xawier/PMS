@@ -25,6 +25,7 @@ Trzymajmy się moze pewnego wzorca:
 * angielskie nazwy klass
 * unikamy "style"
 * klasy ładujemy do jednego pliku, jednak rozdzielamy je według modułów
+* staramy się korzystać z Bootstrapa, nie wymyślamy koła na nowo!
 * polski interfejs (?)
 
 Dokumentacja
