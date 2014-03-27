@@ -2,6 +2,7 @@ PMS
 ===
 
 Robimy własnego Redmine'a! :o
+
 A konkretnie GUI! Nie wdrazaj tu zadnego back-end'u!
 
 Uwaga 1
