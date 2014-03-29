@@ -34,3 +34,4 @@ Dokumentacja
 Proponuje pisać dokumentacje i API o ktore zostalismy poproszenie w wiki!
 * [Dokumentacje](https://github.com/Xawier/PMS/wiki/Dokumentacja)
 * [API](https://github.com/Xawier/PMS/wiki/API)
+* [Wymagania](https://github.com/Xawier/PMS/wiki/wymagania)
