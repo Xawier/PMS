@@ -17,7 +17,6 @@
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	
 </head>
 
 <body>
@@ -30,10 +29,10 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand brand" href="index.html">PMS</a>
+				<a class="navbar-brand brand" href="./">PMS</a>
 				<p class="navbar-text actual-project-cont">
 					<span class="navbar-brand-separator">/</span> 
-					<a href="ProjectOverview.html" class="navbar-actual-project">Projekt Testowy</a>
+					<a href="?page=ProjectOverview" class="navbar-actual-project">Projekt Testowy</a>
 				</p>
 			</div>
 			<div class="navbar-collapse collapse">
@@ -42,7 +41,7 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projekty <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li class="dropdown-header">Aktualny projekt</li>
-							<li><a href="ProjectOverview.html">Projekt testowy</a></li>
+							<li><a href="?page=ProjectOverview">Projekt testowy</a></li>
 							<li class="divider"></li>
 							<li class="dropdown-header">Ostatnie projekty</li>
 							<li><a href="#">Most recent one</a></li>
@@ -55,8 +54,8 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Zadania <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li class="dropdown-header">Aktualny projekt</li>
-							<li><a href="ListOfTasks.html">Lista zadań</a></li>
-							<li><a href="AddTask.html">Dodaj zadanie</a></li>
+							<li><a href="?page=ListOfTasks">Lista zadań</a></li>
+							<li><a href="?page=AddTask">Dodaj zadanie</a></li>
 							<li class="divider"></li>
 							<li class="dropdown-header">Filtry</li>
 							<li><a href="#">Zadania przypisane do mnie</a></li>
@@ -64,7 +63,7 @@
 							<li class="divider"></li>
 							<li><a href="#">Zarządzaj filtrami</a></li>
 							<li class="divider"></li>
-							<li><a href="CustomFields.html">Dodatkowe pola</a></li>
+							<li><a href="?page=CustomFields">Dodatkowe pola</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -83,23 +82,14 @@
 			</div><!--/.nav-collapse -->
 		</div>
 	</div>
-	<div class="container">
-		<ol class="breadcrumb">
-			<li class="active">Strona Główna</li>
-		</ol>
-	</div>
-	<!-- Main jumbotron for a primary marketing message or call to action -->
-	<div class="jumbotron">
-		<div class="container">
-			<div class="center-block table-responsive table-background-white" style="height:200px;">
-			Tu ma być główna strona PMS... Tu bym dał liste ostatni projektów...
-			</div>
-			</br>
-			<div class="center-block table-responsive table-background-white" style="height:200px;">
-			A tu ostatnich zdarzeń... 
-			</div>
-		</div>
-	</div>
+	<?php
+        $requestedPage = $_GET['page'];
+        $availablePages = array_diff(scandir('pages'), array('.', '..'));
+        if (!in_array($requestedPage . '.php', $availablePages)) {
+            $requestedPage = 'Homepage';
+        }
+        require_once 'pages/' . $requestedPage . '.php';
+        ?>
 	<div class="container">
 		<footer>
 			<p>&copy; PMS 2014</p>
@@ -108,11 +98,11 @@
 	<script src="js/jquery-1.8.2.min.js"></script>
 	<script type="text/javascript">
 		$("#add-task-btn").click(function(event) {
-			window.location = "AddTask.html";
+			window.location = "?page=AddTask";
 		});
 
 		$(".table-clickable").click(function(event) {
-			window.location = "ViewTask.html";
+			window.location = "?page=ViewTask";
 		});
 	</script>
 	<!-- Latest compiled and minified JavaScript -->
