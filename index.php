@@ -75,9 +75,7 @@
 							<li><a href="?page=CustomFields">Pola Formularza</a></li>
 							<li class="divider"></li>
 							<li><a href="?page=TypesOfIssues">Typy Zagadnień</a></li>
-							<li class="divider"></li>
 							<li><a href="?page=IssuesStatus">Statusy zagadnień</a></li>
-							<li class="divider"></li>
 							<li><a href="?page=Enumeration">Wyliczenia</a></li>
 						</ul>
 					</li>
