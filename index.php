@@ -8,6 +8,7 @@
 	<meta name="description" content="Html PMS sketch">
 
 	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -114,7 +115,14 @@
 		});
 	</script>
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    
+    <!-- Grupa Słowniki i Rejestry -->
+    <script src="js/xeditable.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular-mocks.js"></script>
+    <script src="js/controller.js"></script>
+    <!-- Grupa Słowniki i Rejestry -->
 
 </body>
 </html>
