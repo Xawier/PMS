@@ -77,9 +77,6 @@
 							<li><a href="?page=TypesOfIssues">Typy Zagadnień</a></li>
 							<li><a href="?page=IssuesStatus">Statusy zagadnień</a></li>
 							<li><a href="?page=Enumeration">Wyliczenia</a></li>
-							<li class="divider"></li>
-							<li><a href="?page=StatusTransitions">Przejścia stanów</a></li>
-							<li><a href="?page=FieldPermissions">Uprawnienia pól</a></li>
 						</ul>
 					</li>
 				</ul>
