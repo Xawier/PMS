@@ -66,6 +66,14 @@
 							<li><a href="?page=CustomFields">Dodatkowe pola</a></li>
 						</ul>
 					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Administracja <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-header">Użytkownicy</li>
+							<li><a href="?page=EditUser">Dodaj użytkownika</a></li>
+							<li><a href="?page=ListUsers">Lista użytkowników</a></li>
+						</ul>
+					</li>
 				</ul>
 				<div class="navbar-form navbar-left">
 					<button type="button" class="btn btn-primary" id="add-task-btn">Dodaj zadanie</button>
@@ -75,9 +83,9 @@
 						<input type="text" placeholder="Wpisz szukaną frazę..." class="form-control">
 					</div>
 					<button type="submit" class="btn btn-success">Szukaj</button>
-					<button type="button" class="btn btn-info">
+					<a href="?page=MyAccount" class="btn btn-info">
 						<span class="glyphicon glyphicon-user"></span>
-					</button>
+					</a>
 				</form>
 			</div><!--/.nav-collapse -->
 		</div>
