@@ -62,8 +62,6 @@
 							<li><a href="#">Ostatnio dodane zadania</a></li>
 							<li class="divider"></li>
 							<li><a href="#">Zarządzaj filtrami</a></li>
-							<li class="divider"></li>
-							<li><a href="?page=CustomFields">Dodatkowe pola</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
@@ -72,6 +70,8 @@
 							<li class="dropdown-header">Użytkownicy</li>
 							<li><a href="?page=EditUser">Dodaj użytkownika</a></li>
 							<li><a href="?page=ListUsers">Lista użytkowników</a></li>
+							<li class="divider"></li>
+							<li><a href="?page=CustomFields">Pola Formularza</a></li>
 						</ul>
 					</li>
 				</ul>
