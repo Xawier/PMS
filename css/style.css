@@ -110,3 +110,90 @@ dt {
 	border-left: 1px solid rgba(0, 0, 0, 0.25);
 	padding-top: 70px;
 }
+
+
+/* Grupa: Słowniki i Rejestry*/
+body > div.jumbotron > ol {
+    background: none;
+    font-size: 1.5em;
+}
+body > div.jumbotron > div > div > div > form > div > div > input[type=checkbox]{
+    margin: 11px 0;
+}
+body > div.jumbotron > div > div > div > form > div:nth-child(1) > div.col-sm-10.col-sm-uniqe{
+    padding: 10px 15px;
+}
+body > div.jumbotron >  .change-pos {
+}
+#create-stat{
+    margin: 10px auto;
+    text-align: right;
+    margin-top: -40px;
+}
+.plus_field {
+    cursor: pointer;
+    margin-top: 8px;  
+    margin-right: 2px;
+    color: #5cb85c; 
+}
+.plus_field:hover, #create-stat > a:hover {
+    color: #47a447;
+    text-decoration: none;
+}
+#create-stat > a {
+    color: #5cb85c;
+    font-size: 1.1em;
+}
+.ok_field {
+    cursor: pointer;
+    color: #5cb85c; 
+}
+.trash_field {
+   cursor: pointer;
+}
+.trash_field:hover {
+    color: #800000; 
+}
+body > div.jumbotron > div > div > div > table > tbody > tr > td > a {
+    padding: 0 5px;
+    color:#999 ;
+}
+body > div.jumbotron > div > div > div > table > tbody > tr > td > a:hover {
+    padding: 0 5px;
+    color: #428bca;
+}
+div[ng-app] { 
+    margin: 10px;
+}
+form[editable-form] > div {
+    margin: 10px 0;
+}
+table.table tr td, table.table tr th {
+    text-align: center;
+    vertical-align: middle!important;
+ }
+table.table tr td:nth-child(1), table.table tr th:nth-child(1) {
+    text-align: left;
+}
+.modal-body p {
+    font-size: 14px!important;
+}
+label.ng-scope {
+  display: block;
+}
+.editable-input {
+    vertical-align: middle;
+    padding-left: 20px;
+}
+.ng-scope:nth-child(n+1) h3 {
+    margin-top: 40px!important;
+}
+.change .editable-wrap {
+    /* display: block!important; */
+    width: 50%;
+    margin-bottom: 10px!important;
+    display: block;
+}
+body > div.jumbotron > div > div > div > table > tbody > tr > td.change > span.editable-wrap.editable-checklist.ng-scope > div > span > label > span{
+    padding: 0 10px;
+}
