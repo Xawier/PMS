@@ -11,7 +11,7 @@
            <div class="tab-content">
   <span>                  
 <h3>Nazwa projektu</h3>
-<h4>#ID projektu</h4> </span>
+<h4>ID projektu</h4> </span>
                                 <h4><span class="glyphicon glyphicon-info-sign"></span> Szczegóły</h4>
                                 <div class="row">
                                        
