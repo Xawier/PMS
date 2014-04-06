@@ -48,7 +48,7 @@
 							<li><a href="#">Most recent one</a></li>
 							<li><a href="#">Another recent project</a></li>
 							<li class="divider"></li>
-							<li><a href="#">Pokaż wszystkie projekty</a></li>
+							<li><a href="?page=ProjectAll">Pokaż wszystkie projekty</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
@@ -119,6 +119,9 @@
 
 		$(".table-clickable").click(function(event) {
 			window.location = "?page=ViewTask";
+		});
+		$(".table-clickable-project").click(function(event) {
+			window.location = "?page=ProjectOverview";
 		});
 	</script>
 	<!-- Latest compiled and minified JavaScript -->
