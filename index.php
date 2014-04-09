@@ -123,6 +123,9 @@
 		$(".table-clickable-project").click(function(event) {
 			window.location = "?page=ProjectOverview";
 		});
+		$(".table-clickable-user").click(function(event) {
+			window.location = "?page=ViewUser";
+		});
 	</script>
 	<!-- Latest compiled and minified JavaScript -->
     <script src="js/angular.min.js"></script>

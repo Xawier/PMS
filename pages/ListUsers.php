@@ -30,6 +30,7 @@
                         <thead>
                                 <tr>
                                         <th>Imię i nazwisko</th>
+                                        <th>Username</th>
                                         <th>Email</th>
                                         <th>Typ</th>
                                         <th>Status</th>
@@ -38,8 +39,9 @@
                                 </tr>
                         </thead>
                         <tbody>
-                                <tr  class="table-clickable">
+                                <tr  class="table-clickable-user">
                                         <td>Admin Adminowski</td>
+                                        <td>Admin</td>
                                         <td>admin@admin.com</td>
                                         <td>Admin</td>
                                         <td>Aktywny</td>
@@ -49,8 +51,9 @@
                                         	<a class="btn btn-danger">Usuń</a>
                                         </td>
                                 </tr>
-                                <tr class="table-clickable">
+                                <tr class="table-clickable-user">
                                         <td>Admin Adminowski</td>
+                                        <td>Admin</td>
                                         <td>admin@admin.com</td>
                                         <td>Admin</td>
                                         <td>Aktywny</td>
@@ -60,8 +63,9 @@
                                         	<a class="btn btn-danger">Usuń</a>
                                         </td>
                                 </tr>
-                                <tr class="table-clickable">
+                                <tr class="table-clickable-user">
 										<td>Admin Adminowski</td>
+										<td>Admin</td>
                                         <td>admin@admin.com</td>
                                         <td>Admin</td>
                                         <td>Aktywny</td>

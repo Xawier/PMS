@@ -9,16 +9,7 @@
         <div class="container">
                 <div class="center-block">
                         <form class="form-horizontal" role="form">
-                                <div class="form-group">
-                                        <label for="inputRole" class="col-sm-2 control-label">Typ</label>
-                                        <div class="col-sm-10">
-                                                <select class="form-control" id="inputRole">
-                                                     <option>Administrator</option>
-                                                     <option>Użytkownik</option>
-                                                </select>
-                                        </div>
-                                </div>
-                                <div class="form-group">
+	                       		<div class="form-group">
                                         <label for="inputName" class="col-sm-2 control-label">Imię</label>
                                         <div class="col-sm-10">
                                                 <input type="text" class="form-control" id="inputName" placeholder="Imię" required>
@@ -27,7 +18,13 @@
                                 <div class="form-group">
                                         <label for="inputSurname" class="col-sm-2 control-label">Nazwisko</label>
                                         <div class="col-sm-10">
- 											<input type="text" class="form-control" id="inputSurname" placeholder="Imię" required>
+ 											<input type="text" class="form-control" id="inputSurname" placeholder="Nazwisko" required>
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                        <label for="inputSurname" class="col-sm-2 control-label">Username</label>
+                                        <div class="col-sm-10">
+ 											<input type="text" class="form-control" id="inputSurname" placeholder="Username" required>
                                         </div>
                                 </div>
                                 <div class="form-group">
@@ -49,14 +46,23 @@
                                         </div>
                                 </div>
                                 <div class="form-group">
-                                        <label for="inputStatus" class="col-sm-2 control-label">Status</label>
-                                        <div class="col-sm-10">
-                                                <select class="form-control" id="inputStatus">
-                                                                <option>Aktywny</option>
-                                                                <option>Nie aktywny</option>
-                                                </select>
-                                        </div>
-                                </div>
+								    <div class="col-sm-offset-2 col-sm-10">
+								      <div class="checkbox">
+								        <label>
+								          <input type="checkbox"> Administrator
+								        </label>
+								      </div>
+								    </div>
+								</div>
+								<div class="form-group">
+								    <div class="col-sm-offset-2 col-sm-10">
+								      <div class="checkbox">
+								        <label>
+								          <input type="checkbox"> Aktywny
+								        </label>
+								      </div>
+								    </div>
+								</div>
                                 </br>
                                 <div class="form-group">
                                         <div class="col-sm-offset-2 col-sm-10">

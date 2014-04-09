@@ -27,7 +27,7 @@ hr {
 	width: 100%;
 }
 
-.table-clickable {
+.table-clickable, .table-clickable-user {
 	cursor: pointer;
 }
 
