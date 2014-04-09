@@ -6,9 +6,9 @@
         app.controller('Ctrl', function($scope, $filter, $http) {
             // Stałe pola
             $scope.issues = [
-                {id: 1, name: 'Bug', map: 2},
-                {id: 2, name: 'Feature', map: 1},
-                {id: 3, name: 'Support', map: 1}
+                {id: 1, name: 'Bug', map: false, value: 1},
+                {id: 2, name: 'Feature', map: true},
+                {id: 3, name: 'Support', map: false}
             ]; 
             $scope.documents = [
                 {id: 1, name: 'User documentation', default: true, activity: false},
@@ -24,10 +24,6 @@
             $scope.times = [
                 {id: 1, name: 'Design', default: false, activity: true},
                 {id: 2, name: 'Development', default: false, activity: true},
-            ]; 
-             $scope.maps = [
-                {value: 1, text: 'TAK'},
-                {value: 2, text: 'NIE'},
             ]; 
             $scope.fields = [
                 {value: 1, text: 'Przypisany do'},
@@ -53,11 +49,13 @@
                 return $http.post('/save', data);
             };
             $scope.showMap = function(issue) {
-                var selected = [];
+                var checked = [];
                     if(issue.map) {
-                        selected = $filter('filter')($scope.maps, {value: issue.map});
+                        return checked.length ? checked[0].text : 'TAK';
                     }
-                    return selected.length ? selected[0].text : '';
+                    else {
+                        return checked.length ? checked[0].text : 'NIE';
+                    }
             };
             $scope.showFields = function(issue) {
                 var checked = [];
