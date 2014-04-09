@@ -6,7 +6,7 @@
         app.controller('Ctrl', function($scope, $filter, $http) {
             // Stałe pola
             $scope.issues = [
-                {id: 1, name: 'Bug', map: false, value: 1},
+                {id: 1, name: 'Bug', map: false},
                 {id: 2, name: 'Feature', map: true},
                 {id: 3, name: 'Support', map: false}
             ]; 
