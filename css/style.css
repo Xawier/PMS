@@ -201,6 +201,10 @@ label.ng-scope {
     margin-bottom: 10px!important;
     display: block;
 }
-body > div.jumbotron > div > div > div > table > tbody > tr > td.change > span.editable-wrap.editable-checklist.ng-scope > div > span > label > span{
+.editable-checklist.ng-scope > div > span > label > span{
     padding: 0 10px;
+}
+.add_enumeration {
+    float: right;
+    margin-bottom: 20px;
 }
