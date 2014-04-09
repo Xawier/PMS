@@ -16,11 +16,11 @@
 				    <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>Status</th>
-                                <th>Domyślny Status</th>
-                                <th>Zagadnienia zamknięte</th>
-                                <th>Sortuj</th>
-                                <th>Akcja</th>
+                                <th style="width: 30%">Status</th>
+                                <th style="width: 20%">Domyślny Status</th>
+                                <th style="width: 20%">Zagadnienia zamknięte</th>
+                                <th style="width: 15%">Sortuj</th>
+                                <th style="width: 15%">Akcja</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -41,15 +41,13 @@
                                     </span>
                                 </td>
                                 <td>
-                                    <a href='#'><i class="fa fa-sort-amount-asc "></i></a>
                                     <a href='#'><i class="fa fa-sort-asc"></i></a>
                                     <a href='#'><i class="fa fa-sort-desc"></i></a>
-                                    <a href='#'><i class="fa fa-sort-amount-desc"></i></a>
                                 </td>
                                 <td style="white-space: nowrap">
                                     <form editable-form name="rowform" onbeforesave="save($data, status.id)" ng-show="rowform.$visible" class="form-buttons form-inline" shown="inserted == status">
                                         <button type="submit" ng-disabled="rowform.$waiting" class="btn btn-primary"><i class="fa fa-floppy-o"></i></button>
-                                        <button type="button" ng-disabled="rowform.$waiting" ng-click="rowform.$cancel()" class="btn btn-default"><i class="fa fa-repeat"></i></button>
+                                        <button type="button" ng-disabled="rowform.$waiting" ng-click="rowform.$cancel()" class="btn btn-default"><i class="fa fa-ban"></i></button>
                                     </form>
                                     <div class="buttons" ng-show="!rowform.$visible">
                                         <button class="btn btn-primary" ng-click="rowform.$show()"><i class="fa fa-pencil-square-o"></i></button>
