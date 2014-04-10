@@ -26,7 +26,7 @@
 <div class="jumbotron">
         <div class="container">
                 <div class="center-block table-responsive table-background-white">
-                <table class="table table-hover">
+                <table class="table table-hover table-clickable-user">
                         <thead>
                                 <tr>
                                         <th>Imię i nazwisko</th>
@@ -39,7 +39,7 @@
                                 </tr>
                         </thead>
                         <tbody>
-                                <tr  class="table-clickable-user">
+                                <tr>
                                         <td>Admin Adminowski</td>
                                         <td>Admin</td>
                                         <td>admin@admin.com</td>
@@ -51,7 +51,7 @@
                                         	<a class="btn btn-danger">Usuń</a>
                                         </td>
                                 </tr>
-                                <tr class="table-clickable-user">
+                                <tr>
                                         <td>Admin Adminowski</td>
                                         <td>Admin</td>
                                         <td>admin@admin.com</td>
@@ -63,7 +63,7 @@
                                         	<a class="btn btn-danger">Usuń</a>
                                         </td>
                                 </tr>
-                                <tr class="table-clickable-user">
+                                <tr>
 										<td>Admin Adminowski</td>
 										<td>Admin</td>
                                         <td>admin@admin.com</td>

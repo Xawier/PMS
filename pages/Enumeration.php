@@ -15,7 +15,7 @@
                     <div ng-app="app" ng-controller="Ctrl">
                     <!-- Kategorie dokumentów -->
                     <h3>Kategorie dokumentów</h3>
-				    <table class="table table-striped">
+				    <table class="table table-striped table-clickable">
                         <thead>
                             <tr>
                                 <th>Nazwa</th>
@@ -26,7 +26,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="document in documents" class="table-clickable">
+                            <tr ng-repeat="document in documents">
                                 <td>
                                     <a href="#"><span editable-text="document.name" e-name="name" e-form="rowform"  onbeforesave="checkName($data, document.id)" e-required e-placeholder="Nazwa wartości">
                                     {{ document.name || '' }}
@@ -65,7 +65,7 @@
                     <!-- Kategorie dokumentów -->
                     <!-- Priorytety zagadnień -->
                     <h3>Priorytety zagadnień</h3>
-				    <table class="table table-striped">
+				    <table class="table table-striped table-clickable">
                         <thead>
                             <tr>
                                 <th>Nazwa</th>
@@ -76,7 +76,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="priority in priorities" class="table-clickable">
+                            <tr ng-repeat="priority in priorities">
                                 <td>
                                     <a href="#"><span editable-text="priority.name" e-name="name" e-form="rowform"  onbeforesave="checkName($data, priority.id)" e-required e-placeholder="Nazwa wartości">
                                     {{ priority.name || '' }}
@@ -127,7 +127,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="time in times" class="table-clickable">
+                            <tr ng-repeat="time in times">
                                 <td>
                                     <a href="#"><span editable-text="time.name" e-name="name" e-form="rowform"  onbeforesave="checkName($data, time.id)" e-required e-placeholder="Nazwa wartości">
                                     {{ time.name || '' }}

@@ -11,7 +11,7 @@
 <div class="jumbotron jumbotron-padding-top-10">
 
         <div class="container">
-
+            
                 <div class="center-block">
                         <nav class="navbar navbar-default navbar-margin-top" role="navigation">
                                 <div class="container-fluid">
@@ -27,11 +27,12 @@
                                                 <span class="navbar-brand brand"><span class="label label-warning">Bug</span> Zadanie pierwsze, coś nie działa</span>
                                         </div>
                                         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-2">
-                                                <a href="?page=EditTask">
-                                                        <button type="button" class="btn btn-default navbar-btn">Edycja</button>
+                                                <a href="?page=EditTask" title="Edycja" class="btn btn-default navbar-btn">
+                                                        <span class="glyphicon glyphicon-pencil"></span>
                                                 </a> 
-                                                <button type="button" class="btn btn-default navbar-btn">Komentarz</button> 
-                                                <button type="button" class="btn btn-default navbar-btn">Przydziel osobę</button>
+                                                <a href="#" title="Komentarz" class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-comment"></span></a> 
+                                                <a href="#" title="Przydziel osobę" class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-hand-right"></span></a>
+                                                <a href="?page=ListTimeEntry" title="Czas pracy" class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-time"></span></a>
                                                 <div class="btn-group">
                                                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                                                 Więcej <span class="caret"></span>
@@ -52,7 +53,8 @@
                                         </div>
                                 </div>
                         </nav>
-                </div>
+                <div class="row">
+                    <div class="col-md-10">
 
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs">
@@ -67,28 +69,28 @@
                         <div class="tab-pane active" id="home">
                                 <h3><span class="glyphicon glyphicon-info-sign"></span> Szczegóły</h3>
                                 <div class="row show-grid row-with-space">
-                                        <div class="col-md-1 col-md-3 details-label">Priorytet:</div>
-                                        <div class="col-md-2 col-md-6">Wysoki</div>
-                                        <div class="col-md-1 col-md-3 details-label">Status:</div>
+                                        <div class="col-md-2 details-label">Priorytet:</div>
+                                        <div class="col-md-2">Wysoki</div>
+                                        <div class="col-md-2 details-label">Status:</div>
                                         <div class="col-md-2 col-md-6">Analiza</div>
                                 </div>
                                 <div class="row show-grid row-with-space">
-                                        <div class="col-md-1 col-md-3 details-label">Typ:</div>
-                                        <div class="col-md-2 col-md-6">Bug</div>
-                                        <div class="col-md-1 col-md-3 details-label">Rozwiązanie:</div>
-                                        <div class="col-md-2 col-md-6">Nierozwiązany</div>
+                                        <div class="col-md-2 details-label">Typ:</div>
+                                        <div class="col-md-2">Bug</div>
+                                        <div class="col-md-2 details-label">Rozwiązanie:</div>
+                                        <div class="col-md-2">Nierozwiązany</div>
                                 </div>
                                 <div class="row show-grid row-with-space">
-                                        <div class="col-md-1 col-md-3 details-label">Wersje:</div>
-                                        <div class="col-md-2 col-md-6">2.0</div>
-                                        <div class="col-md-1 col-md-3 details-label">Etykiety:</div>
-                                        <div class="col-md-4 col-md-6"><kbd>Jakiś label</kbd><kbd>Inna etykieta</kbd></div>
+                                        <div class="col-md-2 details-label">Wersje:</div>
+                                        <div class="col-md-2">2.0</div>
+                                        <div class="col-md-2 details-label">Etykiety:</div>
+                                        <div class="col-md-4"><kbd>Jakiś label</kbd><kbd>Inna etykieta</kbd></div>
                                 </div>
                                 <h3><span class="glyphicon glyphicon-font"></span> Dokładny opis</h3>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper eros id massa pretium varius. Phasellus iaculis placerat rutrum. Maecenas facilisis odio libero, non tincidunt turpis ultricies id. Nam scelerisque ligula vel est posuere, ultricies imperdiet elit eleifend. Etiam eu nibh sem. Vestibulum laoreet sollicitudin lorem, nec facilisis orci posuere sit amet. Aenean suscipit risus elementum eros vehicula consectetur. Sed eu venenatis nisl, et accumsan lorem. Etiam ac mollis sapien. Fusce scelerisque orci non felis volutpat porta. Suspendisse at nisi.
                                 <h3><span class="glyphicon glyphicon-user"></span> Osoby</h3>
                                 <div class="row show-grid row-with-space">
-                                        <div class="col-md-2 col-md-3 details-label">Przypisana osoba:</div>
+                                        <div class="col-md-2 details-label">Przypisana osoba:</div>
                                         <div class="col-md-2 col-md-6">Michał Kot</div>
                                         <div class="col-md-2 col-md-3 details-label">Przypisana przez:</div>
                                         <div class="col-md-2 col-md-6">Grzegorz Pała</div>
@@ -111,4 +113,13 @@
                 </div>
 
         </div>
+            <div class="col-md-2">
+                <strong>Kwerendy</strong>
+                <ul class="list-unstyled">
+                    <li><a href="#">Tylko otwarte</a></li>
+                    <li><a href="#">Tylko przypisane do mnie</a></li>
+                    <li><a href="#">Do przejrzenia</a></li>
+                </ul>
+            </div>
+    </div>
 </div>

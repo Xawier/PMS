@@ -6,7 +6,7 @@
 		<div class="container">
 			<div class="center-block table-responsive table-background-white">
             <div ng-app="app" ng-controller="Ctrl">
-                <table class="table table-hover table-striped">
+                <table class="table table-hover table-striped table-clickable">
                     <thead>
                         <tr>
                             <th style="width: 60%">Typ zagadnienia</th>
@@ -15,7 +15,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat="issue in issues" class="table-clickable">
+                        <tr ng-repeat="issue in issues">
                             <td class="change">
                               <span data-toggle="modal" data-target="#myModal{{ issue.name || '' }}" editable-text="issue.name" e-name="name" e-form="rowform" onbeforesave="checkName($data, issue.id)" e-required e-placeholder="Nazwa zagadnienia" >
                               {{ issue.name || '' }}

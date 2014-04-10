@@ -1,14 +1,14 @@
 <!doctype html>
 
-<html lang="en">
+<html>
 <head>
 	<meta charset="utf-8">
 
-	<title>Strona Główna - PMS</title>
+	<title>PMS</title>
 	<meta name="description" content="Html PMS sketch">
 
 	<link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -62,7 +62,7 @@
 							<li><a href="#">Zadania przypisane do mnie</a></li>
 							<li><a href="#">Ostatnio dodane zadania</a></li>
 							<li class="divider"></li>
-							<li><a href="#">Zarządzaj filtrami</a></li>
+							<li><a href="?page=ListQueries">Zarządzaj filtrami</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
@@ -116,9 +116,35 @@
 		$("#add-task-btn").click(function(event) {
 			window.location = "?page=AddTask";
 		});
+                
+                // http://stackoverflow.com/questions/11582512/how-to-get-url-parameters-with-javascript
+                function getURLParameter(name) {
+                    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
+                }
 
-		$(".table-clickable").click(function(event) {
-			window.location = "?page=ViewTask";
+		$(".table-clickable tr").click(function(event) {
+                    var page = getURLParameter('page');
+                    var nextPage = null;
+                    switch (page) {
+                        case 'ListOfTasks':
+                            nextPage = '?page=ViewTask';
+                            break;
+                            
+                        case 'ListQueries':
+                            nextPage = '?page=EditQuery';
+                            break;
+                        
+                        case 'ListTimeEntry':
+                            nextPage = '?page=EditTimeEntry';
+                            break;
+                            
+                        case 'ListUsers':
+                            nextPage = '?page=EditUser';
+                            break;
+                    }
+                    if (nextPage != null) {
+                        window.location = nextPage;
+                    }
 		});
 		$(".table-clickable-project").click(function(event) {
 			window.location = "?page=ProjectOverview";

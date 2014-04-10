@@ -13,7 +13,7 @@
 			<div class="center-block table-responsive table-background-white" >
                 <div class="center-block">
                     <div ng-app="app" ng-controller="Ctrl">
-				    <table class="table table-striped">
+				    <table class="table table-striped table-clickable">
                         <thead>
                             <tr>
                                 <th>Status</th>
@@ -24,7 +24,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="status in statuses" class="table-clickable">
+                            <tr ng-repeat="status in statuses">
                                 <td>
                                     <span editable-text="status.name" e-name="name" e-form="rowform"  onbeforesave="checkName($data, status.id)" e-required >
                                     {{ status.name || '' }}
