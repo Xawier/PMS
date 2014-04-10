@@ -23,11 +23,12 @@ hr {
 
 .table-background-white {
 	background-color: #FFF;
+        margin: 14px 0;
 	padding: 14px 14px 2px 14px;
 	width: 100%;
 }
 
-.table-clickable, .table-clickable-user {
+.table-clickable tr, .table-clickable-user tr {
 	cursor: pointer;
 }
 
@@ -111,14 +112,6 @@ dt {
 	padding-top: 70px;
 }
 
-
-<<<<<<< HEAD
-
-
-
-
-=======
->>>>>>> FETCH_HEAD
 /* Grupa: Słowniki i Rejestry*/
 body > div.jumbotron > ol {
     background: none;

@@ -24,8 +24,8 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
         <div class="container">
-                <div class="center-block table-responsive table-background-white">
-                <table class="table table-hover">
+            <div class="col-md-10 table-responsive table-background-white center-block">
+                <table class="table table-hover table-clickable table-condensed">
                         <thead>
                                 <tr>
                                         <th>Typ</th>
@@ -41,7 +41,7 @@
                                 </tr>
                         </thead>
                         <tbody>
-                                <tr  class="table-clickable">
+                                <tr>
                                         <td>Bug</td>
                                         <td>#BUG-1</td>
                                         <td>Zadanie pierwsze, coś nie działa</td>
@@ -53,7 +53,7 @@
                                         <td> --- </td>
                                         <td>31.03.2014</td>
                                 </tr>
-                                <tr class="table-clickable">
+                                <tr>
                                         <td>Zadanie</td>
                                         <td>#TASK-1</td>
                                         <td>Funkcjonalnośc do implementacji</td>
@@ -65,7 +65,7 @@
                                         <td>21.03.2014</td>
                                         <td>04.04.2014</td>
                                 </tr>
-                                <tr class="table-clickable">
+                                <tr>
                                         <td>Klient</td>
                                         <td>#BUG-K1</td>
                                         <td>Problem z czymśtam</td>
@@ -77,7 +77,7 @@
                                         <td>21.03.2014</td>
                                         <td> --- </td>
                                 </tr>
-                                <tr class="table-clickable">
+                                <tr>
                                         <td>Bug</td>
                                         <td>#BUG-2</td>
                                         <td>Zaś coś nie działa</td>
@@ -91,6 +91,14 @@
                                 </tr>
                         </tbody>
                 </table>
-                </div>
+            </div>
+            <div class="col-md-2">
+                <strong>Kwerendy</strong>
+                <ul class="list-unstyled">
+                    <li><a href="#">Tylko otwarte</a></li>
+                    <li><a href="#">Tylko przypisane do mnie</a></li>
+                    <li><a href="#">Do przejrzenia</a></li>
+                </ul>
+            </div>
         </div>
 </div>

@@ -1,6 +1,8 @@
 <div class="container">
         <ol class="breadcrumb">
                 <li><a href="?page=ListOfTasks">Zadania</a></li>
+                <li><a href="?page=ProjectOverview">Projekt testowy</a></li>
+                <li><a href="?page=ViewTask">#BUG-1</a></li>
                 <li class="active">Edytuj zadanie</li>
         </ol>
 </div>

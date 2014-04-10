@@ -31,7 +31,7 @@
                         </nav>
                 </div>
                 <div class="center-block table-responsive table-background-white half-width">
-                <table class="table table-hover">
+                <table class="table table-hover table-clickable">
                         <thead>
                                 <tr>
                                         <th>Nazwa</th>
@@ -40,17 +40,17 @@
                                 </tr>
                         </thead>
                         <tbody>
-                                <tr class="table-clickable">
+                                <tr>
                                         <td>Następnik</td>
                                         <td>Select</td>
                                         <td>--</td>
                                 </tr>
-                                <tr class="table-clickable">
+                                <tr>
                                         <td>Opis klienta</td>
                                         <td>Opis</td>
                                         <td>50 - 400</td>
                                 </tr>
-                                <tr class="table-clickable">
+                                <tr>
                                         <td>Źródła pomocy</td>
                                         <td>Tekst</td>
                                         <td>--</td>
