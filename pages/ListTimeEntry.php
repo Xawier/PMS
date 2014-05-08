@@ -37,7 +37,7 @@
                 <form class="form-inline pull-right"><strong>Filtry:</strong> od: <input type="date" class="form-control"> do: <input type="date" class="form-control"> <input type="submit" value="Filtruj" class="btn btn-primary" onclick="return false"></form>
             </div>
         </div>
-        <div class="center-block table-background-white">
+        <div class="col-md-10 center-block table-background-white">
             <table class="table table-hover table-responsive table-clickable">
                     <thead>
                             <tr>
@@ -85,6 +85,14 @@
                             </tr>
                     </tbody>
             </table>
+        </div>
+        <div class="col-md-2 kwerendy">
+            <strong>Kwerendy</strong>
+            <ul class="list-unstyled">
+                <li><a href="#">Tylko otwarte</a></li>
+                <li><a href="#">Tylko przypisane do mnie</a></li>
+                <li><a href="#">Do przejrzenia</a></li>
+            </ul>
         </div>
     </div>
 </div>

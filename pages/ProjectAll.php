@@ -9,7 +9,7 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
         <div class="container">
-                <div class="center-block table-responsive table-background-white">
+            <div class="col-md-10 center-block table-responsive table-background-white">
                 <table class="table table-hover">
                         <thead>
                                 <tr>
@@ -59,6 +59,14 @@
                                
                         </tbody>
                 </table>
-                </div>
+            </div>
+            <div class="col-md-2">
+                <strong>Kwerendy</strong>
+                <ul class="list-unstyled">
+                    <li><a href="#">Tylko otwarte</a></li>
+                    <li><a href="#">Tylko przypisane do mnie</a></li>
+                    <li><a href="#">Do przejrzenia</a></li>
+                </ul>
+            </div>
         </div>
 </div>
