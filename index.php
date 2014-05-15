@@ -58,11 +58,9 @@
 							<li><a href="?page=ListOfTasks">Lista zadań</a></li>
 							<li><a href="?page=AddTask">Dodaj zadanie</a></li>
 							<li class="divider"></li>
-							<li class="dropdown-header">Filtry</li>
+							<li class="dropdown-header">Kwerendy</li>
 							<li><a href="#">Zadania przypisane do mnie</a></li>
 							<li><a href="#">Ostatnio dodane zadania</a></li>
-							<li class="divider"></li>
-							<li><a href="?page=ListQueries">Zarządzaj filtrami</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
@@ -80,6 +78,9 @@
 							<li class="divider"></li>
 							<li><a href="?page=StatusTransitions">Przejścia stanów</a></li>
 							<li><a href="?page=FieldPermissions">Uprawnienia pól</a></li>
+                                                        <li class="divider"></li>
+                                                        <li class="dropdown-header">Kwerendy</li>
+							<li><a href="?page=ListQueries">Zarządzaj kwerendami</a></li>
 						</ul>
 					</li>
 				</ul>

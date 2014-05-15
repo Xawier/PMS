@@ -1,6 +1,6 @@
 <div class="container">
     <ol class="breadcrumb">
-            <li class="active">Zapytania</li>
+            <li class="active">Kwerendy</li>
     </ol>
 </div>
 <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -11,28 +11,28 @@
         if (empty($action)) {
             $action = $_POST['action'];
         }
-        if ($action == 'dodaj-zapytanie') {
+        if ($action == 'dodaj-kwerende') {
             ?>
-            <div class="alert alert-success">Zapytanie zostało dodane do bazy.</div>
+            <div class="alert alert-success">Kwerenda została dodana do bazy.</div>
             <?php
-        } elseif ($action == 'edytuj-zapytanie') {
+        } elseif ($action == 'edytuj-kwerende') {
             ?>
-            <div class="alert alert-success">Zapytanie zostało zaktualizowane.</div>
+            <div class="alert alert-success">Kwerenda została zaktualizowana.</div>
             <?php
-        } elseif ($action == 'usun-zapytanie') {
+        } elseif ($action == 'usun-kwerende') {
             ?>
-            <div class="alert alert-success">Zapytanie zostało usunięte.</div>
+            <div class="alert alert-success">Kwerenda została usunięta.</div>
             <?php
         }
         ?>
-        <a href="?page=AddQuery" class="btn btn-success">Dodaj zapytanie</a>
+        <a href="?page=AddQuery" class="btn btn-success">Dodaj kwerendę</a>
         <div class="center-block table-background-white">
             <table class="table table-hover table-responsive table-clickable">
                     <thead>
                             <tr>
-                                    <th>Rodzaj zapytania</th>
+                                    <th>Rodzaj kwerendy</th>
                                     <th>Projekt</th>
-                                    <th>Nazwa zapytania</th>
+                                    <th>Nazwa kwerendy</th>
                                     <th>Opis</th>
                                     <th>Prywatność</th>
                                     <th>Działania</th>
@@ -42,12 +42,12 @@
                             <tr>
                                     <td>Lista zadań</td>
                                     <td>Projekt testowy</td>
-                                    <td>Zapytanie 1</td>
-                                    <td>To jest moje pierwsze zapytanie.</td>
-                                    <td>publiczne</td>
+                                    <td>Kwerenda 1</td>
+                                    <td>To jest moja pierwsza kwerenda.</td>
+                                    <td>publiczna</td>
                                     <td>
                                             <a href="?page=EditQuery" class="btn btn-primary">Edytuj</a>
-                                            <a href="?page=ListQueries&amp;action=usun-zapytanie" class="btn btn-danger">Usuń</a>
+                                            <a href="?page=ListQueries&amp;action=usun-kwerende" class="btn btn-danger">Usuń</a>
                                     </td>
                             </tr>
                     </tbody>

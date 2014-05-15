@@ -9,8 +9,8 @@ function usunKryterium(element) {
 </script>
 <div class="container">
         <ol class="breadcrumb">
-                <li><a href="?page=ListQueries">Zapytania</a></li>
-                <li class="active">Edytuj zapytanie</li>
+                <li><a href="?page=ListQueries">Kwerendy</a></li>
+                <li class="active">Edytuj kwerendę</li>
         </ol>
 </div>
 <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -18,9 +18,9 @@ function usunKryterium(element) {
         <div class="container">
                 <div class="center-block">
                         <form class="form-horizontal" role="form" action="?page=ListQueries" method="post">
-                                <input type="hidden" name="action" value="edytuj-zapytanie" />
+                                <input type="hidden" name="action" value="edytuj-kwerende" />
                                 <div class="form-group">
-                                        <label for="inputQueryType" class="col-sm-2 control-label">Rodzaj zapytania</label>
+                                        <label for="inputQueryType" class="col-sm-2 control-label">Rodzaj kwerendy</label>
                                         <div class="col-sm-10">
                                                 <select class="form-control" id="inputQueryType">
                                                     <option>Czas pracy</option>
@@ -45,14 +45,14 @@ function usunKryterium(element) {
                                         </div>
                                 </div>
                                 <div class="form-group">
-                                        <label for="inputQueryName" class="col-sm-2 control-label">Nazwa zapytania</label>
+                                        <label for="inputQueryName" class="col-sm-2 control-label">Nazwa kwerendy</label>
                                         <div class="col-sm-10">
-                                                <input type="text" class="form-control" value="Moje zapytanie" id="inputQueryName" />
+                                                <input type="text" class="form-control" value="Moja kwerenda" id="inputQueryName" />
                                         </div>
                                 </div>
                                 <div id="kryteria">
                                     <div class="form-group">
-                                            <label class="col-sm-2 control-label">Kryteria zapytania</label>
+                                            <label class="col-sm-2 control-label">Kryteria kwerendy</label>
                                             <div class="col-sm-3">
                                                     <select class="form-control">
                                                             <option>user_id</option>
@@ -92,20 +92,20 @@ function usunKryterium(element) {
                                         </div>
                                 </div>
                                 <div class="form-group">
-                                        <label for="inputProject" class="col-sm-2 control-label">Prywatność zapytania</label>
+                                        <label for="inputProject" class="col-sm-2 control-label">Prywatność kwerendy</label>
                                         <div class="col-sm-10">
-                                            <label style="font-weight: normal"><input type="checkbox" checked="checked" /> Niech to zapytanie będzie zapytaniem <strong>publicznym</strong>.</label>
+                                            <label style="font-weight: normal"><input type="checkbox" checked="checked" /> Niech ta kwerenda będzie kwerendą <strong>publiczną</strong>.</label>
                                         </div>
                                 </div>
                                 <div class="form-group">
                                         <label for="inputProject" class="col-sm-2 control-label">Opis <small>(opcjonalny)</small></label>
                                         <div class="col-sm-10">
-                                            <textarea rows="6" class="form-control">To jest moje pierwsze zapytanie.</textarea>
+                                            <textarea rows="6" class="form-control">To jest moja pierwsza kwerenda.</textarea>
                                         </div>
                                 </div>
                                 <div class="form-group">
                                         <div class="col-sm-offset-2 col-sm-10">
-                                                <button type="submit" class="btn btn-success">Edytuj zapytanie</button>
+                                                <button type="submit" class="btn btn-success">Edytuj kwerendę</button>
                                                 <a href="?page=ListQueries" class="btn btn-default">Anuluj</a>
                                         </div>
                                 </div>
